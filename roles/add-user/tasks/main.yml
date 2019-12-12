@@ -1,0 +1,9 @@
+---
+# tasks file for add-user
+- name: Adding User with Specific uid
+  user:
+    name: codein
+    comment: Nishant Parhi ;)
+    shell: /bin/bash
+    uid: 1040
+    append: yes

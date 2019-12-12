@@ -1,0 +1,8 @@
+---
+- name: Add User Codein
+  hosts: localhost
+  become: true
+  gather_facts: false
+  tasks:
+    - import_role:
+        name: add-user
